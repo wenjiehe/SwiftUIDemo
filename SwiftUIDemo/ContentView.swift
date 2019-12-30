@@ -11,15 +11,28 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            ZStack {
-                ForEach(0 ..< 10) { item in
-                    Text("Hello, World!\nmabe 三层楼")
-                        .font(.callout)
-                        .foregroundColor(Color.orange)
-                        .multilineTextAlignment(.center)
-                        .lineLimit(3)
-                        .padding(.all, 50.0)
+            MapView()
+                .edgesIgnoringSafeArea(.top)
+                .frame(height: 300)
+            
+            CircleImage()
+                .offset(x: 0, y: -130)
+                .padding(.bottom, -130)
+            
+            VStack{
+                VStack(alignment: .leading){
+                    Text("庆余年")
+                        .font(.title)
+                    HStack(alignment: .top){
+                        Text("五竹")
+                            .font(.subheadline)
+                        Spacer()
+                        Text("猫腻")
+                            .font(.subheadline)
+                    }
                 }
+                .padding()
+                Spacer()
             }
         }
     }

@@ -13,6 +13,10 @@
 		3D6AC18823B5EE67001C3B5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6AC18723B5EE67001C3B5A /* Assets.xcassets */; };
 		3D6AC18B23B5EE67001C3B5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D6AC18A23B5EE67001C3B5A /* Preview Assets.xcassets */; };
 		3D6AC18E23B5EE67001C3B5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6AC18C23B5EE67001C3B5A /* LaunchScreen.storyboard */; };
+		3D782C0D23B9D96F006B1027 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D782C0C23B9D96F006B1027 /* MapView.swift */; };
+		3D782C0F23B9E2AB006B1027 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D782C0E23B9E2AB006B1027 /* Macro.swift */; };
+		3D782C1323B9EC1A006B1027 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D782C1223B9EC1A006B1027 /* CircleImage.swift */; };
+		3D782C1E23B9FCD4006B1027 /* UserConfigureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D782C1D23B9FCD4006B1027 /* UserConfigureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3D6AC18A23B5EE67001C3B5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3D6AC18D23B5EE67001C3B5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D6AC18F23B5EE67001C3B5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D782C0C23B9D96F006B1027 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3D782C0E23B9E2AB006B1027 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		3D782C1223B9EC1A006B1027 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		3D782C1D23B9FCD4006B1027 /* UserConfigureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		3D6AC18023B5EE65001C3B5A /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3D782C1723B9FA0D006B1027 /* JSONFile */,
+				3D782C1823B9FA0D006B1027 /* Model */,
+				3D782C1123B9EBDF006B1027 /* Vendor */,
+				3D782C1023B9EBB3006B1027 /* CustomView */,
 				3D6AC18123B5EE65001C3B5A /* AppDelegate.swift */,
 				3D6AC18323B5EE65001C3B5A /* SceneDelegate.swift */,
 				3D6AC18523B5EE65001C3B5A /* ContentView.swift */,
@@ -73,6 +85,38 @@
 				3D6AC18A23B5EE67001C3B5A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3D782C1023B9EBB3006B1027 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				3D782C0C23B9D96F006B1027 /* MapView.swift */,
+				3D782C1223B9EC1A006B1027 /* CircleImage.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		3D782C1123B9EBDF006B1027 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				3D782C0E23B9E2AB006B1027 /* Macro.swift */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		3D782C1723B9FA0D006B1027 /* JSONFile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSONFile;
+			sourceTree = "<group>";
+		};
+		3D782C1823B9FA0D006B1027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D782C1D23B9FCD4006B1027 /* UserConfigureModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +191,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6AC18223B5EE65001C3B5A /* AppDelegate.swift in Sources */,
+				3D782C0D23B9D96F006B1027 /* MapView.swift in Sources */,
 				3D6AC18423B5EE65001C3B5A /* SceneDelegate.swift in Sources */,
+				3D782C1E23B9FCD4006B1027 /* UserConfigureModel.swift in Sources */,
 				3D6AC18623B5EE65001C3B5A /* ContentView.swift in Sources */,
+				3D782C0F23B9E2AB006B1027 /* Macro.swift in Sources */,
+				3D782C1323B9EC1A006B1027 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
