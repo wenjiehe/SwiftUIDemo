@@ -25,7 +25,7 @@ struct MapView: UIViewRepresentable {
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
-            .frame(width: kScreenWidth, height: 250, alignment: .center)
+            .frame(width: kSCREENWIDTH, height: 250, alignment: .center)
             .offset(x: 0, y: -250)
         
     }
